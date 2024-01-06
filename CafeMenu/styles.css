@@ -1,0 +1,119 @@
+body {
+/*elemento {
+  Estilizar um elemento
+}*/
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  /*Imagem de fundo*/
+  font-family: sans-serif;
+  /*Fonte dos caracteres*/
+  padding: 20px;
+  /*Espaçamento*/
+}
+
+h1 {
+  font-size: 40px;
+  /*Tamanho da fonte*/
+  margin-top: 0;
+  /*Margem pelo topo*/
+  margin-bottom: 15px;
+  /*Margem pelo fundo*/
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+  /*Estilo da fonte*/
+}
+
+h1, h2, p {
+  text-align: center;
+  /*Alinhamento*/ 
+}
+
+.menu {
+/*.classe {
+  Estilizar uma classe
+}*/
+  width: 80%;
+  /*Largura*/
+  background-color: burlywood;
+  margin-left: auto;
+  /*Margem pela esquerda*/
+  margin-right: auto;
+  /*Margem pela direita*/
+  padding: 20px;
+  max-width: 500px;
+  /*Largura máxima*/
+}
+
+img {
+  display: block;
+  /*Tipo de colagem*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
+
+hr {
+  height: 2px;
+  /*Altura*/
+  background-color: brown;
+  border-color: brown;
+  /*Cor da borda*/
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+  /*Cor geral*/
+}
+
+a:visited {
+/* visited: Aparece depois de clicado uma vez*/
+  color: black;
+}
+
+a:hover {
+/*hover: Aparece ao passar o mouse*/
+  color: brown;
+}
+
+a:active {
+/*active: Aparece ao clicar*/
+  color: brown;
+}

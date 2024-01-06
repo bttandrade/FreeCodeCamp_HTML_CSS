@@ -1,0 +1,93 @@
+<!--Estudo HTML/CSS freecodecamp-->
+
+<!DOCTYPE html>
+<html lang="en"> <!--lang: Idioma do documento -->
+<!--Sempre iniciar com o DOCTYPE e html-->
+    <head>
+    <!--Local onde será definido as informações do documento-->
+        <meta charset= "UTF-8"> <!--charset: Formato de codificação escolhido-->
+        <!--Define informações sobre os dados do documento-->
+        <title>CatPhotoApp</title>
+        <!--Título do documento-->
+    </head>
+    <body>
+    <!--Local onde será armazenado o conteúdo do documento-->
+        <main>
+        <!--Conteúdo principal do documento-->
+            <h1>CatPhotoApp</h1>
+            <!--Cabeçalho - h1 maior nível e h6 menor nível-->
+            <section>
+            <!--Separar o documento por seções-->
+                <h2>Cat Photos</h2>
+                <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+                    <!--target: Onde abrirá o link// href: Link que será aberto-->
+                <!--Texto-->
+                <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+                    <!--img: Adicionar uma imagem// src: Caminho para a imagem// alt: Texto alternativo para a imagem-->
+                <!--Define um hyperlink-->
+            </section>
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things cats love:</h3>
+                <ul>
+                <!--Lista desordenada-->
+                    <li>cat nip</li>
+                    <!--Conteúdo da lista-->
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <figure>
+                <!--Usado para marcar diagramas, ilustrações, fotos, e fragmentos de código-->
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption> <!--em: Itálico-->
+                    <!--Descreve o conteúdo na figure-->
+                </figure>
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                <!--Lista ordenada-->
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  <!--Strong: Negrito-->
+                </figure>
+            </section>
+            <section>
+                <h2>Cat Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo"> <!--action: Onde enviar o formulário-->
+                <!--Cria um formulário para ser respondido pelo usuário-->
+                    <fieldset>
+                    <!--Agrupa os elementos de um formulário-->
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <!--Da uma descrição a uma fieldset-->
+                        <label>
+                        <!--Define um rótulo para o elemento do formulário (Deve ser igual ao id do input respectivo)-->
+                            <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
+                                <!--id: Identifica cada input// type: Tipo do input// name: Nome do input// value: Valor do input// checked: Torna default-->
+                            <!--Local da entrada de informação do usuário-->
+                        </label>
+                        <label>
+                            <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+                    </fieldset>
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                        <!--placeholder: Dica de qual informação é esperada// required: Torna obrigatório o input-->
+                    <button type="submit">Submit</button>
+                    <!--Cria um botão-->
+                </form>
+            </section>
+        </main>
+        <footer>
+        <!--Rodapé do documento-->
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </body>
+</html>
